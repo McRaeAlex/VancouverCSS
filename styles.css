@@ -2,7 +2,8 @@
     --mountain-width: 150px;
     --mountain-height: 200px;
 
-    --mountain-top-width: 30px; /* This can eventully become a calc call that automatically calcs it */
+    --mountain-top-width: 30px;
+    /* This can eventully become a calc call that automatically calcs it */
     --mountain-top-height: 40px;
 }
 
@@ -37,8 +38,8 @@ body {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(11,11,105,1) 45%, rgba(143,218,233,1) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 60%, rgba(4, 245, 246, 1) 100%);
 }
 
 .mountain-one {
@@ -60,4 +61,40 @@ body {
     border-right: var(--mountain-top-width) solid transparent;
     border-bottom: var(--mountain-top-height) solid snow;
     z-index: 2;
+}
+
+/* This is the stars animation */
+/* --------------------------- */
+
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+.stars,
+.twinkling {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    display: block;
+}
+
+.stars {
+    background: transparent url(assets/images/stars.png) repeat top center;
+    z-index: 0;
+}
+
+.twinkling {
+    background: transparent url(assets/images/twinkling.png) repeat top center;
+    z-index: 1;
+    animation: move-twink-back 200s linear infinite;
 }
