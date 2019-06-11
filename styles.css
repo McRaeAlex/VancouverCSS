@@ -34,7 +34,11 @@ body {
     text-align: center;
 }
 
-/* This is the mountain css animation */
+/* Mountain Animation */
+
+/*
+    Depths are from -10 to 10
+*/
 
 .cssanimation {
     height: 100%;
@@ -98,8 +102,25 @@ body {
     left: 180px;
 }
 
+/* City Drawing */
+
+/* Depths are from 10 to 20*/
+
+.city {
+    z-index: 10;
+}
+
+.tower1 {
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+    height: 120px;
+    width: 60px;
+    background-color: grey;
+    z-index: 11;
+}
+
 /* This is the stars animation */
-/* --------------------------- */
 
 @keyframes move-twink-back {
     from {
