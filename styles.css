@@ -1,10 +1,14 @@
 :root {
     --mountain-width: 150px;
     --mountain-height: 200px;
+    --mountain-color: darkgreen;
 
-    --mountain-top-width: 30px;
-    /* This can eventully become a calc call that automatically calcs it */
-    --mountain-top-height: 40px;
+    --mountain-top-width: 37px;
+    --mountain-top-height: 50px;
+    --mountain-top-color: snow;
+
+    --mountain-cap-width: 15px;
+    --mountain-cap-height: 15px;
 }
 
 html {
@@ -25,7 +29,10 @@ body {
     height: 100vh;
     width: 100vw;
     color: lightpink;
+    text-align: center;
 }
+
+/* This is the mountain css animation */
 
 .cssanimation {
     height: 100%;
@@ -42,25 +49,51 @@ body {
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 60%, rgba(4, 245, 246, 1) 100%);
 }
 
-.mountain-one {
+.mountain {
     position: absolute;
     bottom: 0;
 
     border-left: var(--mountain-width) solid transparent;
     border-right: var(--mountain-width) solid transparent;
-    border-bottom: var(--mountain-height) solid black;
+    border-bottom: var(--mountain-height) solid var(--mountain-color);
     z-index: 1;
 }
 
-.mountain-top-one {
+.mountain-top {
     position: absolute;
-    bottom: calc(var(--mountain-height) - 40px);
-    left: calc(var(--mountain-width) - var(--mountain-top-width));
+    bottom: calc(0px - var(--mountain-top-height));
+    left: calc(0px - var(--mountain-top-width));
 
     border-left: var(--mountain-top-width) solid transparent;
     border-right: var(--mountain-top-width) solid transparent;
-    border-bottom: var(--mountain-top-height) solid snow;
+    border-bottom: var(--mountain-top-height) solid var(--mountain-top-color);
     z-index: 2;
+}
+
+.mountain-cap {
+    position: absolute;
+    bottom: calc(-1 * (var(--mountain-cap-height) + var(--mountain-top-height)));
+    border-left: var(--mountain-cap-width) solid transparent;
+    border-right: var(--mountain-cap-width) solid transparent;
+    border-top: var(--mountain-cap-height) solid var(--mountain-top-color);
+    z-index: 2;
+}
+
+.mountain-cap-two {
+    left: calc(0px - 2 * var(--mountain-cap-width));
+}
+
+.mountain-one {
+    opacity: 0.95;
+}
+
+.mountain-two {
+    opacity: 0.5;
+    left: 90px;
+}
+
+.mountain-three {
+    left: 180px;
 }
 
 /* This is the stars animation */
