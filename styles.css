@@ -113,11 +113,60 @@ body {
 .tower1 {
     position: absolute;
     bottom: 0px;
-    left: 50px;
+    left: 350px;
+    z-index: 11;
+
     height: 120px;
     width: 60px;
+
     background-color: grey;
-    z-index: 11;
+}
+
+.tower2 {
+    position: absolute;
+    bottom: 0px;
+    left: 250px;
+    z-index: 12;
+
+    height: 110px;
+    width: 60px;
+
+    background-color: darkgrey;
+}
+
+.windows {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 12;
+
+    height: 10px;
+    width: 10px;
+
+    background-color: lightblue;
+    box-shadow: 20px 0px red, 40px 0px purple,
+        0px 20px pink, 20px 20px teal, 40px 20px greenyellow,
+        0px 40px brown, 20px 40px gold, 40px 40px orangered,
+        0px 60px yellow, 20px 60px orange, 40px 60px lightgrey,
+        0px 80px turquoise, 20px 80px silver, 40px 80px honeydew,
+        0px 100px yellow, 20px 100px orange, 40px 100px lightgrey;
+}
+
+.windows2 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 12;
+
+    height: 10px;
+    width: 10px;
+
+    background-color: lightblue;
+    box-shadow: 20px 0px red, 40px 0px purple,
+        0px 20px pink, 20px 20px teal, 40px 20px greenyellow,
+        0px 40px brown, 20px 40px gold, 40px 40px orangered,
+        0px 60px yellow, 20px 60px orange, 40px 60px lightgrey,
+        0px 80px turquoise, 20px 80px silver, 40px 80px honeydew;
 }
 
 /* This is the stars animation */
@@ -145,7 +194,7 @@ body {
 }
 
 .stars {
-    background: transparent url(assets/images/stars.png) repeat top center;
+    background: transparent url(assets/images/stars2.png) repeat top center;
     z-index: 0;
 }
 
