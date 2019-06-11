@@ -4,8 +4,8 @@ This is my landing page for my website. I made a second repo because I wanted to
 
 ## Todo:
 
-- [ ] Get mountains setup in a way i like
-- [ ] Add stars and make them sparkle
+- [x] Get mountains setup in a way i like
+- [x] Add stars and make them sparkle
 - [ ] Add vancouver city structure infront of mountains
 - [ ] Add toronto to right hand side
 - [ ] Add moving cloud to vancouver
