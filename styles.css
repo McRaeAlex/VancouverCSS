@@ -50,7 +50,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: 1;
     background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) var(--night-sky-height), rgba(4, 245, 246, 1) 100%);
 }
@@ -63,6 +63,14 @@ body {
     border-right: var(--mountain-width) solid transparent;
     border-bottom: var(--mountain-height) solid var(--mountain-color);
     z-index: 1;
+}
+
+/* 
+    This makes it so when you hover a mountain it puts it to the back
+    this allows the tilte of mountains in the back to be seen.
+*/
+.mountain:hover {
+    z-index: -1;
 }
 
 .mountain-top {
