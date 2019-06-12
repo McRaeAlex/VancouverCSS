@@ -11,6 +11,9 @@
     --mountain-cap-height: 15px;
 
     --night-sky-height: 30%;
+
+    --cloud-color: white;
+    --cloud-size: 100px;
 }
 
 html {
@@ -99,15 +102,69 @@ body {
 
 .mountain-one {
     opacity: 0.95;
+    z-index: 4;
 }
 
 .mountain-two {
     opacity: 0.5;
     left: 90px;
+    z-index: 1;
 }
 
 .mountain-three {
     left: 180px;
+    z-index: 5;
+}
+
+/* Cloud animation */
+
+.cloud {
+    position: absolute;
+    z-index: 2;
+
+    width: var(--cloud-size);
+    height: calc(var(--cloud-size) / 2.8);
+    border-radius: calc(var(--cloud-size) / 2.5);
+
+    animation: cloud-movement linear 20s infinite;
+}
+
+.cloud:after,
+.cloud:before {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+}
+
+.cloud:after {
+    width: calc(var(--cloud-size) / 2.5);
+    height: calc(var(--cloud-size) / 2.5);
+    border-radius: calc(var(--cloud-size) / 2.5);
+    left: calc(var(--cloud-size) / 8.333);
+    top: calc(var(--cloud-size) / -6.25);
+    z-index: 10;
+}
+
+.cloud:before {
+    width: calc(var(--cloud-size) / 2.1);
+    height: calc(var(--cloud-size) / 2.1);
+    border-radius: 100%;
+    left: calc(var(--cloud-size) / 2.5);
+    top: calc(var(--cloud-size) / -4.16666666);
+}
+
+@keyframes cloud-movement {
+    0% {
+        left: calc(-10px - var(--cloud-size));
+        bottom: 100px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    100% {
+        left: 100vw;
+        bottom: 200px;
+        background-color: #636363;
+    }
 }
 
 /* City Drawing */

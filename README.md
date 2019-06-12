@@ -12,4 +12,5 @@ This is my landing page for my website. I made a second repo because I wanted to
 - [ ] Add moving cloud to vancouver
 - [ ] make it rain when cloud goes over vancouver sometimes
 - [x] Add title text names to mountains
-- [ ] Make another animation for mobile instead of trying to make it work (It's just easier and gives me practice) use display: hidden and media queries
+- [ ] Add water under all the current animation
+- [ ] Maybe: Make another animation for mobile instead of trying to make it work (It's just easier and gives me practice) use display: hidden and media queries 
