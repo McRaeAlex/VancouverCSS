@@ -12,7 +12,6 @@
 
     --night-sky-height: 30%;
 
-    --cloud-color: white;
     --cloud-size: 100px;
 }
 
@@ -116,7 +115,7 @@ body {
     z-index: 5;
 }
 
-/* Cloud animation */
+/* Cloud Animation */
 
 .cloud {
     position: absolute;
@@ -169,7 +168,7 @@ body {
 
 /* City Drawing */
 
-/* Depths are from 10 to 20*/
+/* Depths are from 10 to 20 */
 
 .city {
     z-index: 10;
