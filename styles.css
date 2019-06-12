@@ -118,28 +118,136 @@ body {
     z-index: 10;
 }
 
-.tower1 {
+.tower-xl {
     position: absolute;
+    height: 150px;
+    width: 60px;
+
+    box-shadow: 5px 0px lightgrey;
+}
+
+.tower-lg {
+    position: absolute;
+    height: 120px;
+    width: 60px;
+
+    box-shadow: 5px 0px lightgrey;
+}
+
+.tower-md {
+    position: absolute;
+    height: 115px;
+    width: 60px;
+
+    box-shadow: 5px 0px lightgrey;
+}
+
+.tower-sm {
+    position: absolute;
+    height: 110px;
+    width: 60px;
+
+    box-shadow: 5px 0px lightgrey;
+}
+
+.tower-xsm {
+    position: absolute;
+    height: 90px;
+    width: 60px;
+
+    box-shadow: 5px 0px lightgrey;
+}
+
+.tower1 {
     bottom: 0px;
     left: 350px;
     z-index: 11;
-
-    height: 120px;
-    width: 60px;
 
     background-color: grey;
 }
 
 .tower2 {
-    position: absolute;
     bottom: 0px;
     left: 250px;
     z-index: 12;
 
-    height: 110px;
-    width: 60px;
+    background-color: darkgrey;
+}
+
+.tower3 {
+    bottom: 0;
+    right: 25px;
+    z-index: 12;
+
+    background-color: rgb(121, 117, 117);
+}
+
+.tower4 {
+    bottom: 0;
+    right: 80px;
+    z-index: 11;
 
     background-color: darkgrey;
+}
+
+.tower5 {
+    bottom: 0px;
+    right: 300px;
+
+    background-color: antiquewhite;
+    z-index: 11;
+}
+
+.tower6 {
+    bottom: 0;
+    right: 320px;
+
+    background-color: rgb(88, 112, 114);
+    z-index: 12;
+}
+
+.tower7 {
+    right: 245px;
+    bottom: 0px;
+
+    background-color: rgb(181, 189, 189);
+    z-index: 11;
+}
+
+.tower8 {
+    right: 150px;
+    bottom: 0px;
+
+    background-color: bisque;
+    z-index: 12;
+}
+
+.tower9 {
+    right: 200px;
+    bottom: 0px;
+
+    background-color: rgb(160, 138, 108);
+    z-index: 13;
+}
+
+.tower10 {
+    right: 120px;
+    bottom: 0px;
+
+    background-color: gray;
+    z-index: 10;
+}
+
+.convention-center {
+    position: absolute;
+    bottom: 0px;
+    right: 380px;
+    z-index: 15;
+
+    height: 50px;
+    width: 100px;
+
+    background-color: red;
 }
 
 .windows {
@@ -160,7 +268,7 @@ body {
         0px 100px yellow, 20px 100px orange, 40px 100px lightgrey;
 }
 
-.windows2 {
+.windows-sm {
     position: absolute;
     top: 5px;
     left: 5px;
@@ -175,6 +283,22 @@ body {
         0px 40px brown, 20px 40px gold, 40px 40px orangered,
         0px 60px yellow, 20px 60px orange, 40px 60px lightgrey,
         0px 80px turquoise, 20px 80px silver, 40px 80px honeydew;
+}
+
+.windows-xsm {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 12;
+
+    height: 10px;
+    width: 10px;
+
+    background-color: lightblue;
+    box-shadow: 20px 0px red, 40px 0px purple,
+        0px 20px pink, 20px 20px teal, 40px 20px greenyellow,
+        0px 40px brown, 20px 40px gold, 40px 40px orangered,
+        0px 60px turquoise, 20px 60px silver, 40px 60px honeydew;
 }
 
 /* This is the stars animation */
