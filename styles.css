@@ -1,7 +1,7 @@
 :root {
     --mountain-width: 150px;
     --mountain-height: 200px;
-    --mountain-color: darkgreen;
+    --mountain-color: rgb(61, 95, 60);
 
     --mountain-top-width: 37px;
     --mountain-top-height: 50px;
@@ -10,7 +10,7 @@
     --mountain-cap-width: 15px;
     --mountain-cap-height: 15px;
 
-    --night-sky-height: 90%;
+    --night-sky-height: 100%;
 
     --cloud-size: 100px;
 
@@ -18,7 +18,7 @@
 
 @media only screen and (max-width: 600px) {
     :root {
-        --night-sky-height: 50%;
+        --night-sky-height: 100%;
     }
 }
 
