@@ -9,7 +9,7 @@ This is my landing page for my website. I made a second repo because I wanted to
 - [x] Get mountains setup in a way i like
 - [x] Add stars and make them sparkle
 - [x] Add vancouver city structure on right side
-- [ ] Add moving cloud to vancouver
+- [x] Add moving cloud to vancouver
 - [ ] make it rain when cloud goes over vancouver sometimes
 - [x] Add title text names to mountains
 - [ ] Add water under all the current animation
