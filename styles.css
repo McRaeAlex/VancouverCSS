@@ -13,6 +13,13 @@
     --night-sky-height: 90%;
 
     --cloud-size: 100px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --night-sky-height: 50%;
+    }
 }
 
 html {
@@ -72,7 +79,7 @@ body {
     this allows the tilte of mountains in the back to be seen.
 */
 .mountain:hover {
-    z-index: -1;
+    z-index: 3;
 }
 
 .mountain-top {
@@ -88,7 +95,7 @@ body {
 
 .mountain-cap {
     position: absolute;
-    bottom: calc(-1 * (var(--mountain-cap-height) + var(--mountain-top-height)));
+    bottom: calc((-1 * (var(--mountain-cap-height) + var(--mountain-top-height))) + 1px);
     border-left: var(--mountain-cap-width) solid transparent;
     border-right: var(--mountain-cap-width) solid transparent;
     border-top: var(--mountain-cap-height) solid var(--mountain-top-color);
@@ -107,7 +114,7 @@ body {
 .mountain-two {
     opacity: 0.5;
     left: 90px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .mountain-three {
@@ -119,7 +126,7 @@ body {
 
 .cloud {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
 
     width: var(--cloud-size);
     height: calc(var(--cloud-size) / 2.8);
